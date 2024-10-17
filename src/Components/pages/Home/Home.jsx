@@ -1,9 +1,12 @@
-import Navbar from "../share/Navbar";
+
+import Navbar from "../../share/Navbar";
+import News from "./News";
 
 const Home = () => {
     return (
         <section>
             <Navbar/>
+            <News/>
         </section>
     );
 };
