@@ -1,16 +1,26 @@
 import PropTypes from 'prop-types'; // ES6
 
-const Button = ({btnText="Sort By: Date modified"}) => {
+const Button = ({ text, icon, onClick, className }) => {
+
+    console.log(text, icon, onClick, className);
 
     return (
-        <>
-           <button className={`py-[12px] px-4 rounded-lg text-[12px] font-bold text-t-secondary bg-white hover:text-white hover:bg-primary transition-colors duration-300`}>{btnText}</button> 
-        </>
+        <button
+        onClick={onClick}
+        className={`py-[12px] px-4 rounded-lg text-[12px] font-bold text-t-secondary bg-white hover:text-white hover:bg-primary transition-colors duration-300 ${className}`}
+        >
+        {/* Display the icon using the provided className for the Boxicon */}
+        {icon && <i className={`mr-2 ${icon}`}></i>} 
+        {text}
+        </button>
     );
 };
 
 Button.propTypes = {
-    btnText: PropTypes.any.isRequired,
+    text: PropTypes.string,    
+    icon: PropTypes.string, 
+    onClick: PropTypes.func,
+    className: PropTypes.string,
 };
 
 export default Button;

@@ -6,25 +6,26 @@ import News from "./News";
 
 const Home = () => {
     return (
-        <section className="bg-b-secondary">
-            <Contianer>
-                <div className="flex justify-between items-center">
-                    <div>
-                        <span className="text-[12px] leading-[15.3px] text-t-secondary">Welcome back</span>
-                        <h2 className="font-bold text-t-primary md:text-xl lg:text-[26px]">Dashboard</h2>
-                    </div>
-                    <div className="flex justify-between items-center gap-3">
-                        <div className="bg-white flex justify-between items-center gap-2 py-2 px-4 rounded-lg">
-                            <box-icon name='search-alt-2'></box-icon>
-                            <input className="outline-none text-[12px] font-bold" type="text" placeholder="Search incident" />
+        <section>
+            <div className="hidden md:block bg-b-secondary mb-5 md:px-4 lg:px-0">
+                <Contianer>
+                    <div className="flex justify-between items-center ">
+                        <div>
+                            <span className="text-[12px] leading-[15.3px] text-t-secondary">Welcome back</span>
+                            <h2 className="font-bold text-t-primary md:text-xl lg:text-[26px]">Dashboard</h2>
                         </div>
-                        <Button btnText={"Sort By: Date modified"} />
-                        <ButtonSecondary btnText={"Cypher AI"} />
-                        {/* <ButtonSecondary btnText={location?.pathname === "/Incidents" ? "New Incident" : "Cypher AI"} /> */}
+                        <div className="flex justify-between items-center gap-3">
+                            <div className="bg-white flex justify-between items-center gap-2 py-2.5 px-4 rounded-lg">
+                                <i className='bx bx-search-alt-2 text-xl'></i>
+                                <input className="outline-none text-[12px] font-bold" type="text" placeholder="Search incident" />
+                            </div>
+                            <Button text="Sort By: Date modified" />
+                            <ButtonSecondary text="Cypher AI" />
+                        </div>
                     </div>
-                </div>
-            </Contianer>
-            <News/>
+                </Contianer>
+            </div>
+            <News />
         </section>
     );
 };

@@ -1,16 +1,26 @@
 import PropTypes from 'prop-types'; // ES6
 
-const ButtonSecondary = ({btnText="Cypher AI"}) => {
+const ButtonSecondary = ({text="Cypher AI", icon, onClick, className}) => {
 
     return (
         <>
-           <button className={`py-[12px] px-[25px] rounded-lg text-[12px] font-bold text-white bg-primary hover:text-t-secondary hover:bg-white transition-colors duration-300`}>{btnText}</button> 
+           <button
+            onClick={onClick}
+            className={`py-[12px] px-[25px] rounded-lg text-[12px] font-bold text-white bg-primary hover:text-t-secondary hover:bg-white transition-colors duration-300 ${className}`}
+            >
+            {/* Display the icon using the provided className for the Boxicon */}
+            {icon && <i className={`mr-2 ${icon}`}></i>} 
+            {text}
+            </button>
         </>
     );
 };
 
 ButtonSecondary.propTypes = {
-    btnText: PropTypes.any.isRequired,
+    text: PropTypes.string,    
+    icon: PropTypes.string, 
+    onClick: PropTypes.func,
+    className: PropTypes.string,
 };
 
 export default ButtonSecondary;
