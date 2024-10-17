@@ -1,10 +1,9 @@
+import Button from "./Button";
+import ButtonSecondary from "./ButtonSecondary";
+import Contianer from "./Contianer";
+import PropTypes from 'prop-types'; // 
 
-import Button from "../../share/Button";
-import ButtonSecondary from "../../share/ButtonSecondary";
-import Contianer from "../../share/Contianer";
-import News from "./News";
-
-const Home = () => {
+const NavbarSecond = ({btnTextOne, btnTextTwo}) => {
     return (
         <section className="bg-b-secondary">
             <Contianer>
@@ -18,15 +17,19 @@ const Home = () => {
                             <box-icon name='search-alt-2'></box-icon>
                             <input className="outline-none text-[12px] font-bold" type="text" placeholder="Search incident" />
                         </div>
-                        <Button btnText={"Sort By: Date modified"} />
-                        <ButtonSecondary btnText={"Cypher AI"} />
+                        <Button btnText={btnTextOne} />
+                        <ButtonSecondary btnText={btnTextTwo} />
                         {/* <ButtonSecondary btnText={location?.pathname === "/Incidents" ? "New Incident" : "Cypher AI"} /> */}
                     </div>
                 </div>
             </Contianer>
-            <News/>
         </section>
     );
 };
 
-export default Home;
+NavbarSecond.propTypes = {
+    btnTextOne: PropTypes.any.isRequired,
+    btnTextTwo: PropTypes.any.isRequired,
+};
+
+export default NavbarSecond;

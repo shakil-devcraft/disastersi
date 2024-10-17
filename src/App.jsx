@@ -1,13 +1,15 @@
 
+import { Outlet } from 'react-router-dom';
 import './App.css';
-import Home from './Components/pages/Home/Home';
 import 'boxicons'
+import Navbar from './Components/share/Navbar';
 
 function App() {
 
   return (
     <div className='font-primary'>
-      <Home/>
+      <Navbar/>
+      <Outlet/>
     </div>
   )
 }

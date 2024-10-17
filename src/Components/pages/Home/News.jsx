@@ -5,7 +5,7 @@ import Contianer from "../../share/Contianer";
 
 const News = () => {
     return (
-        <section className="pt-5">
+        <section className="">
             <Contianer>
                 <div className="pb-20 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-[25px]">
                     {
