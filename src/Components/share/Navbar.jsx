@@ -1,6 +1,8 @@
 import { NavLink } from "react-router-dom";
 import { navLinks } from "../../api";
 import Contianer from "./Contianer";
+import Button from "./Button";
+import ButtonSecondary from "./ButtonSecondary";
 
 
 
@@ -46,12 +48,13 @@ const Navbar = () => {
                         <span className="text-[12px] leading-[15.3px] text-t-secondary">Welcome back</span>
                         <h2 className="font-bold text-t-primary md:text-xl lg:text-[26px]">Dashboard</h2>
                     </div>
-                    <div>
+                    <div className="flex justify-between items-center gap-3">
                         <div className="bg-white flex justify-between items-center gap-2 py-2 px-4 rounded-lg">
                             <box-icon name='search-alt-2'></box-icon>
-                            <input className="outline-none" type="text" />
+                            <input className="outline-none text-[12px]" type="text" placeholder="Search incident" />
                         </div>
-                        
+                        <Button btnText="Sort By: Date modified" />
+                        <ButtonSecondary btnText="Cypher AI" />
                     </div>
                 </div>
             </Contianer>
