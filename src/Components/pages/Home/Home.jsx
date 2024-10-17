@@ -1,13 +1,14 @@
 
-import Button from "../../share/Button";
-import ButtonSecondary from "../../share/ButtonSecondary";
-import Contianer from "../../share/Contianer";
-import News from "./News";
+// import Button from "../../share/Button";
+// import ButtonSecondary from "../../share/ButtonSecondary";
+// import Contianer from "../../share/Contianer";
+import NavbarSecond from "../../share/NavbarSecond";
+import News from "../../share/News";
 
 const Home = () => {
     return (
         <section>
-            <div className="hidden md:block bg-b-secondary mb-5 md:px-4 lg:px-0">
+            {/* <div className="hidden md:block bg-b-secondary mb-5 md:px-4 lg:px-0">
                 <Contianer>
                     <div className="flex justify-between items-center ">
                         <div>
@@ -24,7 +25,8 @@ const Home = () => {
                         </div>
                     </div>
                 </Contianer>
-            </div>
+            </div> */}
+            <NavbarSecond page="Dashboard" text="Sort By: Date modified" text2="Cypher AI" />
             <News />
         </section>
     );

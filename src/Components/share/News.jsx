@@ -1,11 +1,11 @@
 
-import { newsItem } from "../../../api";
-import Card from "../../share/Card";
-import Contianer from "../../share/Contianer";
+import { newsItem } from "../../api";
+import Card from "./Card";
+import Contianer from "./Contianer";
 
 const News = () => {
     return (
-        <section className="md:px-4 lg:px-0">
+        <section className="px-4 md:px-5 lg:px-0 pt-5">
             <Contianer>
                 <div className="pb-20 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-[25px]">
                     {
