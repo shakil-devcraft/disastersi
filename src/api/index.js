@@ -105,3 +105,32 @@ export const tasksB = [
     { id: 18, title: "Volcanic Eruption", img: "/incident (16).png" },
     { id: 19, title: "Wildfire", img: "/incident (11).png" },
 ];
+
+
+// tasks E cards
+export const tasksE = [
+    {
+        img: "/location.png",
+        title: "Whitechapel Rd.",
+        location: "Tulare County,  Los Angles, CA 23415",
+        amount: "$1,456,654.00"
+    },
+    {
+        img: "/location1.png",
+        title: "Whitechapel Rd.",
+        location: "Tulare County,  Los Angles, CA 23415",
+        amount: "$1,456,654.00"
+    },
+    {
+        img: "/location.png",
+        title: "Whitechapel Rd.",
+        location: "Tulare County,  Los Angles, CA 23415",
+        amount: "$1,456,654.00"
+    },
+    {
+        img: "/location.png",
+        title: "Whitechapel Rd.",
+        location: "Tulare County,  Los Angles, CA 23415",
+        amount: "$1,456,654.00"
+    },
+];
