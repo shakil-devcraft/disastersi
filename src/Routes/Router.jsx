@@ -5,6 +5,11 @@ import Incidents from "../Components/pages/Incidents/Incidents";
 import Locations from "../Components/pages/Locations/Locations";
 import Activities from "../Components/pages/Activities/Activities";
 import Cypher from "../Components/pages/Cypher/Cypher";
+import TaskA from "../Components/pages/Incidents/TaskA";
+import TaskB from "../Components/pages/Incidents/TaskB";
+import TaskC from "../Components/pages/Incidents/TaskC";
+import TaskD from "../Components/pages/Incidents/TaskD";
+import TaskE from "../Components/pages/Incidents/TaskE";
 
 const Router = createBrowserRouter([
     {
@@ -18,6 +23,26 @@ const Router = createBrowserRouter([
             {
                 path: "/Incidents",
                 element: <Incidents/>
+            },
+            {
+                path: "/Incidents/TaskA",
+                element: <TaskA />
+            },
+            {
+                path: "/Incidents/TaskB",
+                element: <TaskB />
+            },
+            {
+                path: "/Incidents/TaskC",
+                element: <TaskC />
+            },
+            {
+                path: "/Incidents/TaskD",
+                element: <TaskD />
+            },
+            {
+                path: "/Incidents/TaskE",
+                element: <TaskE />
             },
             {
                 path: "/Locations",

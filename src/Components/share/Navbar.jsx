@@ -8,7 +8,7 @@ const Navbar = () => {
 
     return (
         <section className="bg-b-secondary">
-            <div className="px-4 md:px-5 lg:px-0">
+            <div>
                 <Contianer>
                     <nav className="flex justify-between items-center">
                         {/* logo */}
