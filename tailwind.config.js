@@ -14,6 +14,9 @@ export default {
         "b-secondary": "#E4E4E780",
         "t-primary": "#09090B",
         "t-secondary": "#71717A"
+      },
+      "backgroundImage": {
+        'map': "url('/map.png')",
       }
     },
   },

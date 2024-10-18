@@ -1,8 +1,11 @@
+import Contianer from "../../share/Contianer";
 
 const Activities = () => {
     return (
         <div>
-            <h1>Activities</h1>
+            <Contianer>
+                <h1>Activities</h1>
+            </Contianer>
         </div>
     );
 };

@@ -1,8 +1,11 @@
+import Contianer from "../../share/Contianer";
 
 const Locations = () => {
     return (
         <div>
-            <h1>Locations</h1>
+            <Contianer>
+                <h1>Locations</h1>
+            </Contianer>
         </div>
     );
 };
