@@ -1,4 +1,4 @@
-// export const navLinks = ["Dashboard", "Incidents", "Locations", "Activities", "Documents", "Cypher AI"];
+// nav items
 export const navLinks = [
     {
         item: "Dashboard",
@@ -64,7 +64,7 @@ export const newsItem = [
 ];
 
 
-// tasks
+// tasks A
 export const tasksA = [
     {
         img: "/task A (3).png",
@@ -81,4 +81,27 @@ export const tasksA = [
         title: "Where did the incident occur?",
         subTitle: "Lorem ipsum dolar sit general sac mascho werho"
     },
+];
+
+
+// tasks B can use image but better icon
+export const tasksB = [
+    { id: 1, title: "Avalanche", img: "/incident (1).png" },
+    { id: 2, title: "Biological", img: "/incident (14).png" },
+    { id: 3, title: "Blizzard", img: "/incident (10).png" },
+    { id: 4, title: "Cold/Freezing", img: "/incident (8).png" },
+    { id: 5, title: "Drought", img: "/incident (4).png" },
+    { id: 6, title: "Earthquake", img: "/incident (6).png" },
+    { id: 7, title: "Flooding", img: "/incident (3).png" },
+    { id: 8, title: "Heat Wave", img: "/incident (2).png" },
+    { id: 9, title: "Hail", img: "/incident (13).png" },
+    { id: 10, title: "Lightning", img: "/incident (15).png" },
+    { id: 11, title: "Man Made", img: "/incident (7).png" },
+    { id: 12, title: "Mudslide", img: "/incident (9).png" },
+    { id: 13, title: "Severe Storm", img: "/incident (17).png" },
+    { id: 15, title: "Strong Wind", img: "/incident (18).png" },
+    { id: 16, title: "Tornado", img: "/incident (12).png" },
+    { id: 17, title: "Tsunami", img: "/incident (5).png" },
+    { id: 18, title: "Volcanic Eruption", img: "/incident (16).png" },
+    { id: 19, title: "Wildfire", img: "/incident (11).png" },
 ];
