@@ -29,7 +29,7 @@ const TaskC = () => {
 
                     <input className="text-xs py-3 px-[10px] outline-none bg-b-secondary w-full rounded-md mt-5" type="text" placeholder="Add title here" />
                     
-                    <h2 className="font-bold leading-[30.6px] text-t-primary text-2xl">
+                    <h2 className="font-bold leading-[30.6px] text-t-primary text-2xl mt-5">
                     Describe what happened during the incident?
                     </h2>
                     <p className="text-sm leading-[26px] text-t-secondary">
