@@ -4,7 +4,7 @@ import ButtonSecondary from "./ButtonSecondary";
 import Contianer from "./Contianer";
 import PropTypes from 'prop-types'; //
 
-const NavbarSecond = ({ page="back", text, icon, onClick, className, text2, icon2, onClick2, className2 }) => {
+const NavbarSecond = ({ page="back", pageImg, text, icon, onClick, className, text2, icon2, onClick2, className2 }) => {
 
     console.log(page, text, icon, onClick, className, text2, icon2, onClick2, className2);
     const location = useLocation();
@@ -16,7 +16,7 @@ const NavbarSecond = ({ page="back", text, icon, onClick, className, text2, icon
                 <div className="md:flex justify-between items-center ">
                     <div>
                         <span className="text-[12px] leading-[15.3px] text-t-secondary">{`Welcome ${location?.pathname !== "/" ? `- ${page}` : "back"}`}</span>
-                        <h2 className="font-bold text-t-primary md:text-xl lg:text-[26px]">{page}</h2>
+                        <h2 className=" flex gap-3 items-center font-bold text-t-primary md:text-xl lg:text-[26px]">{pageImg ? <img src={pageImg} alt="" /> : ""} {page}</h2>
                     </div>
                     <div className="md:flex justify-between items-center gap-3 mt-5 md:mt-0">
                         <div className="bg-white flex justify-between items-center gap-2 py-2.5 px-4 rounded-lg mb-5 md:mb-0">
@@ -35,7 +35,8 @@ const NavbarSecond = ({ page="back", text, icon, onClick, className, text2, icon
 };
 
 NavbarSecond.propTypes = {
-    page: PropTypes.string,    
+    page: PropTypes.string, 
+    pageImg: PropTypes.string, 
     text: PropTypes.string,    
     icon: PropTypes.string, 
     onClick: PropTypes.func,
