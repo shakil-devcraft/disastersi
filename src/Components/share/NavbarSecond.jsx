@@ -25,7 +25,7 @@ const NavbarSecond = ({ page="back", text, icon, onClick, className, text2, icon
                         </div>
                         <div className="flex justify-center gap-5">
                             <Button text={text} />
-                            <ButtonSecondary text2={text2} icon2={icon2} />
+                            <ButtonSecondary text2={text2} icon2={icon2} onClick2={onClick2} />
                         </div>
                     </div>
                 </div>

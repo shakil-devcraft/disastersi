@@ -62,3 +62,23 @@ export const newsItem = [
         amount: "$1,456,654.00"
     },
 ];
+
+
+// tasks
+export const tasksA = [
+    {
+        img: "/task A (3).png",
+        title: "What type of incident?",
+        subTitle: "Choose the category that best describes the incident."
+    },
+    {
+        img: "/task A (1).png",
+        title: "Tell us about the incident?",
+        subTitle: "Let’s connect the dots and see where to start."
+    },
+    {
+        img: "/task A (2).png",
+        title: "Where did the incident occur?",
+        subTitle: "Lorem ipsum dolar sit general sac mascho werho"
+    },
+];
