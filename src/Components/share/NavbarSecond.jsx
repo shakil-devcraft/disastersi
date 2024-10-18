@@ -24,7 +24,7 @@ const NavbarSecond = ({ page="back", text, icon, onClick, className, text2, icon
                             <input className="outline-none text-[12px] font-bold flex-1" type="text" placeholder="Search incident" />
                         </div>
                         <div className="flex justify-center gap-5">
-                            <Button text={text} />
+                            <Button text={text} icon={icon} onClick={onClick} />
                             <ButtonSecondary text2={text2} icon2={icon2} onClick2={onClick2} />
                         </div>
                     </div>
