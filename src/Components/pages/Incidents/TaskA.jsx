@@ -1,6 +1,5 @@
 import { useNavigate } from "react-router-dom";
 import { tasksA } from "../../../api";
-import ButtonSecondary from "../../share/ButtonSecondary";
 import Contianer from "../../share/Contianer";
 
 
@@ -60,7 +59,7 @@ const TaskA = () => {
 
             {/* Get Started Button */}
             <div className="text-center mt-[75px]">
-                <ButtonSecondary text2={"Get started"} className2={"hover:bg-black hover:text-white"} onClick2={newIncidentsAdd} />
+                <button onClick={newIncidentsAdd} className="py-[11px] px-[25px] rounded-lg text-[12px] font-bold text-white bg-primary hover:bg-black hover:text-white transition-colors duration-300">Get started</button>
             </div>
             </Contianer>
         </section>
