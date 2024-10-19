@@ -1,10 +1,20 @@
 import { NavLink, useLocation } from "react-router-dom";
 import { navLinks } from "../../api";
 import Contianer from "./Contianer";
+import { useState } from "react";
+import SmallNavbar from "./SmallNavbar";
 
 const Navbar = () => {
+    const [menu, setMenu] = useState(false);
+
+    // location
     const location = useLocation();
     console.log(location.pathname);
+
+    // change menu open and close
+    const openMenu = () => {
+        setMenu(!menu);
+    };
 
     return (
         <section className="bg-b-secondary">
@@ -44,11 +54,15 @@ const Navbar = () => {
                                     <p className="text-t-secondary font-normal text-[14px] leading-[17.85px]">usmanzafar@gmail.com</p>
                                 </div>
                                 <div className="block md:hidden">
-                                    <i className='bx bx-menu text-[35px]' ></i>
+                                    <button onClick={openMenu}>{menu ? <i className='bx bx-x text-[35px]' ></i> : <i className='bx bx-menu text-[35px]' ></i>}</button>
                                 </div>
                             </div>
                         </div>
                     </nav>
+
+                    {
+                        menu ? <SmallNavbar openMenu={openMenu} /> : ""
+                    }
 
                 </Contianer>
             </div>
