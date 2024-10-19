@@ -1,6 +1,7 @@
 
 import { newsItem } from "../../api";
 import Card from "./Card";
+import ChatComponent from "./ChatComponent";
 import Contianer from "./Contianer";
 
 const News = () => {
@@ -14,6 +15,7 @@ const News = () => {
                         )
                     }
                 </div>
+                <ChatComponent/>
             </Contianer>
         </section>
     );
