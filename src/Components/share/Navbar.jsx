@@ -19,7 +19,14 @@ const Navbar = () => {
                         <ul className="hidden md:flex justify-between items-center md:gap-4 lg:gap-5">
                             {
                                 navLinks?.map(({item, link}, idx) => (
-                                    <li key={idx} className="text-t-secondary font-bold text-sm leading-[17.85px]"><NavLink to={link} className="active:text-t-primary">{item}</NavLink></li>
+                                    <li key={idx} className="text-t-secondary font-bold text-sm leading-[17.85px]"><NavLink
+                                    to={link}
+                                    className={({ isActive, isPending }) =>
+                                      isPending ? "pending" : isActive ? "active text-t-primary relative before:w-full before:h-[3px] before:bg-[#09090B] before:absolute before:-bottom-[36.5px] before:rounded-full" : "text-t-secondary"
+                                    }
+                                  >
+                                    {item}
+                                  </NavLink></li>
                                 ))
                             }
                         </ul>
