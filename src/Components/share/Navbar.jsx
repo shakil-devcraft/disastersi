@@ -23,16 +23,16 @@ const Navbar = () => {
                     <nav className="flex justify-between items-center">
                         {/* logo */}
                         <div>
-                            <img className="w-20 md:w-[131px]" src="/logo.png" alt="" />
+                            <img className="w-20 md:w-[110px] lg:w-[131px]" src="/logo.png" alt="" />
                         </div>
                         {/* menu */}
-                        <ul className="hidden md:flex justify-between items-center md:gap-4 lg:gap-5">
+                        <ul className="hidden md:flex justify-between items-center md:gap-3 lg:gap-5">
                             {
                                 navLinks?.map(({item, link}, idx) => (
-                                    <li key={idx} className="text-t-secondary font-bold text-sm leading-[17.85px]"><NavLink
+                                    <li key={idx} className="text-t-secondary font-bold text-xs lg:text-sm leading-[17.85px]"><NavLink
                                     to={link}
                                     className={({ isActive, isPending }) =>
-                                      isPending ? "pending" : isActive ? "active text-t-primary relative before:w-full before:h-[3px] before:bg-[#09090B] before:absolute before:-bottom-[36.5px] before:rounded-full" : "text-t-secondary"
+                                      isPending ? "pending" : isActive ? "active text-t-primary relative before:w-full before:h-[3px] before:bg-[#09090B] before:absolute before:-bottom-[37px] before:rounded-full" : "text-t-secondary"
                                     }
                                   >
                                     {item}
@@ -50,8 +50,8 @@ const Navbar = () => {
                                     <img src="/user.png" alt="user profile" />
                                 </div>
                                 <div>
-                                    <h3 className="text-t-secondary font-semibold leading-[20.4px] text-base">Usman Zafar</h3>
-                                    <p className="text-t-secondary font-normal text-[14px] leading-[17.85px]">usmanzafar@gmail.com</p>
+                                    <h3 className="text-t-secondary font-semibold leading-[20.4px] md:text-sm lg:text-base">Usman Zafar</h3>
+                                    <p className="text-t-secondary font-normal md:text-xs lg:text-[14px] leading-[17.85px]">usmanzafar@gmail.com</p>
                                 </div>
                                 <div className="block md:hidden">
                                     <button onClick={openMenu}>{menu ? <i className='bx bx-x text-[35px]' ></i> : <i className='bx bx-menu text-[35px]' ></i>}</button>
