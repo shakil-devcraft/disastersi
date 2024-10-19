@@ -7,7 +7,7 @@ const Button = ({ text, icon, onClick, className }) => {
     return (
         <button
         onClick={onClick}
-        className={`py-[11px] px-4 rounded-lg text-[12px] font-bold text-t-secondary bg-white hover:text-white hover:bg-primary transition-colors duration-300 ${className}`}
+        className={`py-[11px] px-3 lg:px-4 rounded-lg text-[12px] font-bold text-t-secondary bg-white hover:text-white hover:bg-primary transition-colors duration-300 ${className}`}
         >
         {/* Display the icon using the provided className for the Boxicon */}
         {icon && <i className={`mr-2 ${icon}`}></i>} 

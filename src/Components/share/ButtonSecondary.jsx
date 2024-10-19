@@ -8,7 +8,7 @@ const ButtonSecondary = ({text2, icon2, onClick2, className2}) => {
         <>
            <button
             onClick={onClick2}
-            className={`py-[11px] px-[25px] rounded-lg text-[12px] font-bold text-white bg-primary hover:text-t-secondary hover:bg-white transition-colors duration-300 ${className2}`}
+            className={`py-[11px] px-3 lg:px-4 rounded-lg text-[12px] font-bold text-white bg-primary hover:text-t-secondary hover:bg-white transition-colors duration-300 ${className2}`}
             >
             {/* Display the icon using the provided className for the Boxicon */}
             {icon2 && <i className={`mr-2 ${icon2}`}></i>} 

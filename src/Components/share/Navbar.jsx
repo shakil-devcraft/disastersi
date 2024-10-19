@@ -22,9 +22,11 @@ const Navbar = () => {
                 <Contianer>
                     <nav className="flex justify-between items-center">
                         {/* logo */}
-                        <div>
-                            <img className="w-20 md:w-[110px] lg:w-[131px]" src="/logo.png" alt="" />
-                        </div>
+                        <NavLink to="/">
+                            <div>
+                                <img className="w-24 md:w-[110px] lg:w-[131px]" src="/logo.png" alt="" />
+                            </div>
+                        </NavLink>
                         {/* menu */}
                         <ul className="hidden md:flex justify-between items-center md:gap-3 lg:gap-5">
                             {
