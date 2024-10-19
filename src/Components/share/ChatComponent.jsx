@@ -15,7 +15,7 @@ const ChatComponent = () => {
     <section>
       {/* chat icon or btn */}
       <div className={`fixed bottom-5 w-12 h-12 right-5 rounded-full flex items-center justify-center ${isOpen ? "bg-white text-t-primary shadow-lg" : "bg-primary text-white shadow-lg"} `}>
-        <button className="" onClick={chatBtn}>{isOpen ? <i className='text-2xl bx bx-x' ></i> : <i className='text-2xl bx bxs-message-rounded' ></i>}</button>
+        <button className="flex items-center justify-center" onClick={chatBtn}>{isOpen ? <i className='text-2xl bx bx-x' ></i> : <i className='text-2xl bx bxs-message-rounded' ></i>}</button>
       </div>
 
       {

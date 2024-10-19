@@ -14,9 +14,17 @@ const NavbarSecond = ({ page="back", pageImg, text, icon, onClick, className, te
         <section className="bg-b-secondary">
             <Contianer>
                 <div className="md:flex justify-between items-center">
-                    <div>
-                        <span className="text-[12px] leading-[15.3px] text-t-secondary">{`Welcome ${location?.pathname !== "/" ? `- ${page}` : "back"}`}</span>
-                        <h2 className=" flex gap-3 items-center font-bold text-t-primary md:text-lg lg:text-xl lg:text-[26px] mt-2">{pageImg ? <img src={pageImg} alt="" /> : ""} {page}</h2>
+                    <div className="flex items-center gap-3">
+                        {
+                            page === "New Incidents" && (<div className={`w-10 h-10 rounded-full flex items-center justify-center bg-white text-t-primary shadow-lg `}>
+                                {/* <button className="" onClick={chatBtn}>{isOpen ? <i className='text-2xl bx bx-x' ></i> : <i className='text-2xl bx bxs-message-rounded' ></i>}</button> */}
+                                <button className="flex items-center justify-center"><i className='text-2xl bx bx-x' ></i></button>
+                            </div>)
+                        }
+                        <div>
+                            <span className="text-[12px] leading-[15.3px] text-t-secondary">{`Welcome ${location?.pathname !== "/" ? `- ${page}` : "back"}`}</span>
+                            <h2 className=" flex gap-3 items-center font-bold text-t-primary md:text-lg lg:text-xl lg:text-[26px] mt-2">{pageImg ? <img src={pageImg} alt="" /> : ""} {page}</h2>
+                        </div>
                     </div>
                     <div className="md:flex justify-between items-center md:gap-3 mt-5 md:mt-0">
                         <div className="bg-white flex justify-between items-center gap-2 py-2.5 px-4 rounded-lg mb-5 md:mb-0">

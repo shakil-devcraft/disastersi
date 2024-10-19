@@ -5,7 +5,7 @@ import NavbarSecond from "../../share/NavbarSecond";
 const TaskE = () => {
     return (
         <section className="pb-20">
-            <NavbarSecond page="DR-4699 March 2023 Severe Storms" pageImg="/public/incident (17).png" text={"Sort By: Date modified"} icon2={"bx bx-plus-medical"} text2={"New Location"} />
+            <NavbarSecond page="DR-4699 March 2023 Severe Storms" pageImg="/incident (17).png" text={"Sort By: Date modified"} icon2={"bx bx-plus-medical"} text2={"New Location"} />
             <Contianer>
                 <div className="md:flex md:gap-4 lg:gap-[94px] mt-2">
                     <div className="lg:w-[680px]">
