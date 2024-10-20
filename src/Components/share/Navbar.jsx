@@ -51,12 +51,12 @@ const Navbar = () => {
                                 <div>
                                     <img src="/user.png" alt="user profile" />
                                 </div>
-                                <div>
+                                <div className="hidden md:block">
                                     <h3 className="text-t-secondary font-semibold leading-[20.4px] md:text-sm lg:text-base">Usman Zafar</h3>
                                     <p className="text-t-secondary font-normal md:text-xs lg:text-[14px] leading-[17.85px]">usmanzafar@gmail.com</p>
                                 </div>
                                 <div className="block md:hidden">
-                                    <button onClick={openMenu}>{menu ? <i className='bx bx-x text-[35px]' ></i> : <i className='bx bx-menu text-[35px]' ></i>}</button>
+                                    <button className="flex items-center" onClick={openMenu}>{menu ? <i className='bx bx-x text-[35px]' ></i> : <i className='bx bx-menu text-[35px]' ></i>}</button>
                                 </div>
                             </div>
                         </div>
